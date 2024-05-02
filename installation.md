@@ -32,5 +32,8 @@ list --system
 outdated --system
 ```
 
-## 
+## CommandBox Home Directory
 
+The recommendation for specifying a CommandBox home directory using `commandbox.properties` will make service creation using CommandBox Service Manager straightforward. See the [CommandBox Installation](https://commandbox.ortusbooks.com/setup/installation) documentation for instructions on defining the CommandBox home directory.
+
+The service creation must be performed as an administrator user. In a secured server environment, the administrator is not the user that will be running the CFML application. By specifying a pinned CommandBox home directory, the discrepancy between the administrator user's home directory and the CFML application user's home directory will be irrelevant. This configuration also allows the correct permissions to be applied to the CommandBox working files for all users executing CommandBox.
